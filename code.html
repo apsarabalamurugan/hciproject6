@@ -1,0 +1,71 @@
+<html lang = "en">
+<header>
+   <title>Apsara's Portfolio Website - KPI Generation Project</title>
+   <link rel="stylesheet" type="text/css" href="styles.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</header>
+<!-- Nav Bar -->
+<nav role=navigation class="top-nav">
+    <ul>
+        <li ><a href="home.html">Home</a></li>
+        <li ><a href="bio.html">Bio</a></li>
+        <li ><a href="resume.html">Resume </a></li>
+        <li > <a aria-haspopup="true"> <a href="projects.html">Projects</a></a> 
+            <ul class="pulldown-menu">
+                <li><a href="music.html">Displaced Composition</a></li>
+                <li aria-current=page ><a href="code.html">KPI Generation Project</a></li>
+            </ul>
+        </li>
+    </ul>
+ </nav>
+ <main>
+    <!-- Project Title and Description -->
+    <h1>KPI Generation Project</h1>
+    <div class = "code-description" >
+        <p> I led and implemented a solution to optimize the generation of KPIs for geolocation accuracy using dynamic SQL queries in Apache Superset. </p>
+        <p> To do this, I had to first analyze the existing static Python script to figure out its design flaws and potential ways to improve its accuracy and efficiency.  </p>
+        <p> Second, after deciding that running SQL queries would expedite the process, I began developing these queries to be able to extract the most relevant statistics from the large geolocation database in an efficient way.  </p>
+        <p> Once I had figured out the implementation of these queries, I evaluated Apache Superset to ensure charts, tables, and heat maps could be utilized efficiently.  </p>
+        <p>Lastly, I led department-wide tutorial sessions during the rollout of the functionality. </p>
+    </div>
+    <!-- Table (with description) -->
+    <div class = "code-table-caption">
+        <p> Here is the table that shows the progression of time efficiency to generate KPIs for the 3 SOIs (Signals Of Interest) that I was tasked with:</p>
+    </div>
+    <div class = "code-table">
+        <table>
+            <tr>
+                <th>Design</th>
+                <th>Total Generation Time for VHF</th>
+                <th>Total Generation Time for LBAND</th>
+                <th>Total Generation Time for XBAND</th>
+            </tr>
+            <tr>
+                <td>Initial Design</td>
+                <td>1hr</td>
+                <td>45m</td>
+                <td>45m</td>
+            </tr>
+            <tr>
+                <td>Two queries: one to join desired columns and one to generate statistics (WITHOUT optimization)</td>
+                <td>45m</td>
+                <td>30m</td>
+                <td>15m</td>
+            </tr>
+            <tr>
+                <td>Two queries: one to join desired columns and one to generate statistics (WITH optimization)</td>
+                <td>15m</td>
+                <td>10m</td>
+                <td>5m</td>
+            </tr>
+        </table>
+    </div>
+ </main>
+ <!-- Contact Bar -->
+ <div class = "contact-bar">
+    <h3> Contact Information</h3>
+    <p> Email: <a href="mailto:apsarabalamurugan2024@u.northwestern.edu">apsarabalamurugan2024@u.northwestern.edu</a></p>
+    <p> Phone: <a href="tel:9784603534">978-460-3534 </a> </p>
+</div>
+ </html>
